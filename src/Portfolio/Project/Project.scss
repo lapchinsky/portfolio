@@ -1,0 +1,31 @@
+.project{
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    strong{
+      font-size: 5rem;
+    }
+}
+.links {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20vw;
+  a{
+    color: #3E3E37;
+    img{
+      width: 1vw;
+      height: 1vw;
+    }
+  }
+  a:hover{
+    color: #E8CC17;
+  }
+}
+.projectimg {
+  width: 35vw;
+  height: 35vh;
+  border-radius: 15px;
+}

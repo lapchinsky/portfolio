@@ -1,0 +1,19 @@
+.portfolio {
+  background-color: #F5F5F5;
+  color: #3E3E37;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 15px 12vw;
+  .preview{
+    padding: 0 42vw;
+  }
+}
+
+.projects {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+}

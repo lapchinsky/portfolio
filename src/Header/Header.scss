@@ -1,0 +1,33 @@
+$yellow: #E7E26E;
+$lgray: #99958C;
+$dgray: #3E3E37;
+
+.header {
+  color: $yellow;
+  font-size: 28px;
+  background: rgba(50, 51,52, 0);
+  margin: 0;
+  padding: 0 10vw;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    nav {
+      display: flex;
+      gap: 15px;
+      justify-content: space-between;
+        a {
+          font-size: 20px;
+          font-weight: 300;
+          color: rgba(219, 225, 225, 0.8);
+        }
+        a:active {
+          text-decoration: line-through;
+          color: $yellow;
+        }
+      a:hover {
+        color: $yellow;
+      }
+    }
+}

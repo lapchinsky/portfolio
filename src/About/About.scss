@@ -1,0 +1,21 @@
+.about {
+  background-color: #F5F5F5;
+  color: #3E3E37;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 15px 20vw;
+  .about-preview {
+    display: flex;
+    justify-content: space-between;
+  }
+  .list {
+    display: flex;
+    padding: 5vh 0;
+  }
+  img {
+    height: 450px;
+    width: 300px;
+  }
+}

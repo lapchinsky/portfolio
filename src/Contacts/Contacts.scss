@@ -1,0 +1,37 @@
+$yellow: #E7E26E;
+$lgray: #99958C;
+$dgray: #3E3E37;
+$green: #22621D;
+$blue: #276B90;
+
+
+.contacts {
+
+  small {
+    padding: 15px 20vw;
+    font-size: 25px;
+    color: $blue;
+  }
+  h1 {
+    padding: 0 21vw;
+    font-size: 50px;
+    color: #EAEEF1;
+    strong {
+      color: $green
+    }
+  }
+  .description {
+    padding: 0 12vw;
+  }
+  .contact-description{
+    padding-top: 2vh;
+    padding-right: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 3vw;
+      p {
+        font-size: 20px;
+      }
+  }
+}
