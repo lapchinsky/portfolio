@@ -1,19 +1,25 @@
-import React from "react";
+import React, {useContext} from "react";
 import './Main.scss'
+import {portfolioContext} from "../State/portfolioContext";
 
 const Main = () => {
+    const {state, openCV, closeCV} = useContext(portfolioContext)
     return (
         <div className='main preview'>
             <small>-Hi!</small> &nbsp;
             <h1>
                 <p>I'am Artem Lapchinsky</p>
-                <strong>Web Developer</strong>
+                <strong>{`{Web Developer}`}</strong>
             </h1>
-            <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam aperiam eaque ex in ipsa laborum pariatur repellendus sapiente. Beatae blanditiis excepturi hic iste, possimus quaerat quibusdam saepe sapiente tempora.</div>
-            <div>
-                <button className='yellowbtn'>Write a letter</button>
-                <button>Download CV</button>
+            <div className='description'>
+                I would help you with building and maintaining responsive websites.
+                Proficient in HTML, CSS, JavaScript and React; plus some others libraries and frameworks.
             </div>
+            <div style={{marginTop: '2vh'}}>
+                <button onClick={() => openCV()} className='yellowbtn'><a className='btnlink' href="#portfolio">Watch projects</a></button>
+                <button><a className='btnlink' href={process.env.PUBLIC_URL + '/LapchinskyCV.pdf'} download>Download CV</a></button>
+            </div>
+            {state.opened ? <button className='button-up' onClick={() => closeCV()} placeholder='Close'>Close</button> : <button className='button-down' onClick={() => openCV()} placeholder='Open'>Open</button> }
         </div>
     )
 }

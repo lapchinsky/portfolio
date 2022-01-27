@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useContext} from "react";
 import './Contacts.scss'
+import {portfolioContext} from "../State/portfolioContext";
 
 const Contact = () => {
+    const {state, openCV, closeCV} = useContext(portfolioContext)
     return (
         <a name='contacts' className='contacts'>
             <small>-Contact me</small> &nbsp;
@@ -37,6 +39,7 @@ const Contact = () => {
                         <p>+7(928)982-54-43</p>
                     </p>
                 </div>
+                {state.opened ? <button className='btn-up' onClick={() => closeCV()}>Close</button> : <button className='btn-down' onClick={() => openCV()}>Open</button> }
             </div>
         </a>
     )

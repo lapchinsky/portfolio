@@ -6,14 +6,15 @@ $blue: #276B90;
 
 
 .contacts {
-
+  height: 46vh;
+  background: linear-gradient(-130deg, $yellow 5%, #383838 5%, #383838 10%, $yellow 10%, $yellow 15%, #383838 15%, #2D2F2F 34%, #232424 56%);
   small {
     padding: 15px 20vw;
     font-size: 25px;
     color: $blue;
   }
   h1 {
-    padding: 0 21vw;
+    padding: 0 20vw;
     font-size: 50px;
     color: #EAEEF1;
     strong {
@@ -21,17 +22,53 @@ $blue: #276B90;
     }
   }
   .description {
-    padding: 0 12vw;
+    padding: 0 20vw;
+    font-size: 20px;
+    width: 60vw;
   }
   .contact-description{
-    padding-top: 2vh;
+    padding-top: 5vh;
     padding-right: 2vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 3vw;
       p {
         font-size: 20px;
       }
   }
+}
+.btn-up {
+  width: 5vw;
+  height: 22px;
+  background-color: $dgray;
+  border-radius: 15px;
+  color: $yellow;
+  border: 1px solid $lgray;
+  box-shadow: 3px 3px 3px $yellow;
+  position: relative;
+  left: 74vw;
+  bottom: 20vw;
+}
+.btn-down {
+  width: 5vw;
+  height: 22px;
+  background-color: $dgray;
+  border-radius: 15px;
+  color: $yellow;
+  border: 1px solid $lgray;
+  box-shadow: 3px 3px 3px $yellow;
+  position: relative;
+  left: 74vw;
+  bottom: 20vw;
+}
+.btn-up:hover {
+  background-color: $yellow;
+  color: $dgray;
+  box-shadow: 3px 3px 3px $dgray;
+}
+.btn-down:hover {
+  background-color: $yellow;
+  color: $dgray;
+  box-shadow: 3px 3px 3px $dgray;
 }

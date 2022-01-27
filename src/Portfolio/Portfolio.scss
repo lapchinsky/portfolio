@@ -6,13 +6,15 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 15px 12vw;
-  .preview{
-    padding: 0 42vw;
-  }
+    .portfolio-preview {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 7vw;
+      margin-left: 15vw;
+    }
 }
 
 .projects {
-
   display: flex;
   flex-wrap: wrap;
   gap: 2vw;

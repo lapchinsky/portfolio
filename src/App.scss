@@ -8,7 +8,7 @@ $blue: #276B90;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: linear-gradient(110deg, #151719 -1%, #232424 34%, #2D2F2F 64%, #383838 96%);
+  background: linear-gradient(310deg, #151719 1%, #383838 15%, #2D2F2F 34%, #232424 56%);
   font-size: 34px;
   justify-content: center;
   align-content: center;
@@ -50,4 +50,30 @@ $blue: #276B90;
       background: $yellow;
     }
   }
+}
+.button-down {
+  width: 5vw;
+  height: 30px;
+  background-color: $dgray;
+  border-radius: 15px;
+  border: 1px solid $lgray;
+  box-shadow: 3px 3px 3px $yellow;
+}
+.button-up {
+  width: 5vw;
+  height: 30px;
+  background-color: $dgray;
+  border-radius: 15px;
+  border: 1px solid $lgray;
+  box-shadow: 3px 3px 3px $yellow;
+}
+.button-up:hover {
+  background-color: $yellow;
+  color: $dgray;
+  box-shadow: 3px 3px 3px $dgray;
+}
+.button-down:hover {
+  background-color: $yellow;
+  color: $dgray;
+  box-shadow: 3px 3px 3px $dgray;
 }

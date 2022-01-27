@@ -1,7 +1,7 @@
 import React, {useReducer} from "react";
 import {portfolioContext} from "./portfolioContext";
 import {portfolioReducer} from "./portfolioReducer";
-import {SWITCH_PROD,  SWITCH_VISUAL} from "./types";
+import {CLOSE_CV, OPEN_CV, SWITCH_PROD, SWITCH_VISUAL} from "./types";
 
 export const State = ({children}) => {
     const initialState = {
@@ -57,6 +57,14 @@ export const State = ({children}) => {
                 'HTML5', 'JavaScript', 'React', 'Redux', 'Git'
             ]
         },
+        duties: [
+            'Implementing web design and development principles to build stable software.',
+            'Bringing mock-ups to life using HTML, CSS, JavaScript, React.',
+            'Building websites and apps that are responsive and usable.',
+            'Monitoring website performance and rectifying front-end-related issues.',
+            'Identifying innovative ideas and proof of concepts according to project requirements.',
+            'Testing to identify bugs and technical issues before and after deploying.'
+        ],
         visual: true,
         opened: false
     }
@@ -74,10 +82,24 @@ export const State = ({children}) => {
         })
     }
 
+    const openCV = state => {
+        console.log('open')
+        dispatch({
+            type: OPEN_CV
+        })
+    }
+
+    const closeCV = state => {
+        console.log('close')
+        dispatch({
+            type: CLOSE_CV
+        })
+    }
+
 
     return (
         <portfolioContext.Provider value={
-            {state, toggleProd, toggleVisual}
+            {state, toggleProd, toggleVisual, openCV, closeCV}
         }>
             {children}
         </portfolioContext.Provider>

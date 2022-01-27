@@ -5,6 +5,8 @@ $green: #22621D;
 $blue: #276B90;
 
 .main {
+  height: 46vh;
+  background: linear-gradient(310deg, $yellow 5%, #383838 5%, #383838 10%, $yellow 10%, $yellow 15%, #383838 15%, #2D2F2F 34%, #232424 56%);
   padding: 15px 20vw;
   small {
     font-size: 25px;
@@ -17,4 +19,17 @@ $blue: #276B90;
       color: $green
     }
   }
+}
+.btnlink {
+  color: $dgray;
+}
+.button-up {
+  color: $yellow;
+  position: relative;
+  left: 54vw;
+}
+.button-down {
+  color: $yellow;
+  position: relative;
+  left: 54vw;
 }

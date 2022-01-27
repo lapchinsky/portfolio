@@ -10,7 +10,7 @@ const Project = ({project}) => {
             {/*<p style={{maxWidth: '21vw'}}>{project.description}</p>*/}
             <div className='links'>
                 <a href={project.projectLink}><img src="https://cdn-icons-png.flaticon.com/512/1799/1799476.png" alt="projectimg"/> Project</a>
-                <a href={project.githubLink}>Github<img src="https://cdn-icons.flaticon.com/png/512/3128/premium/3128308.png?token=exp=1643209824~hmac=52d1cc74fe2f917ade7c8786b2c11e50" alt="githubimg"/></a>
+                <a href={project.githubLink}>Github <img src="https://pngset.com/images/github-icon-free-download-symbol-logo-trademark-label-transparent-png-1868500.png" alt="githubimg"/></a>
             </div>
         </div>
     )
