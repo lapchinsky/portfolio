@@ -6,7 +6,7 @@ const Contact = () => {
     const {state, openCV, closeCV} = useContext(portfolioContext)
     return (
         <a name='contacts' className='contacts'>
-            <small>-Contact me</small> &nbsp;
+            <small>-Questions?</small> &nbsp;
             <h1>
                 <p>Choose provided method to </p>
                 <strong>{`[Contact Me]`}</strong>

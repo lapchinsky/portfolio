@@ -1,3 +1,3 @@
-https://portfolio-sable-three-65.vercel.app
+https://portfolio-lapchinsky0308-gmailcom.vercel.app
 
 desktop version

@@ -16,6 +16,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
+            <img src={process.env.PUBLIC_URL + '/images/frontend.png'} alt="icons" style={{width: '25vw', height: '25vh', paddingLeft: '2vw'}}/>
                 <div className='skills-content'>
                     <div className='buttons'>
                         <button className={state.visual ? 'yellowbtn' : null} type="button" onClick={() => toggleSoft()}>Soft skills</button>

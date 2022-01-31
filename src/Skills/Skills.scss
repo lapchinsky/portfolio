@@ -3,8 +3,9 @@
   color: #3E3E37;
   font-size: 20px;
   display: flex;
+  gap: 5vw;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   padding: 15px 20vw;
   animation-name: slidedown;
   animation-duration: 2s;
