@@ -9,7 +9,7 @@ export const State = ({children}) => {
             {
                 name: 'Todo App',
                 imgUrl: '/todo.jpg',
-                projectLink: 'https://todohooks-sandy.vercel.app/',
+                projectLink: 'https://todohooks-beige.vercel.app',
                 githubLink: 'https://github.com/lapchinsky/todohookz',
                 description: `Basic ToDo application developed using React.
                  Linted code, bootstrap styles and functional components inside.
