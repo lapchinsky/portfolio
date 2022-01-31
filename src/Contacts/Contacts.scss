@@ -8,6 +8,8 @@ $blue: #276B90;
 .contacts {
   height: 46vh;
   background: linear-gradient(-130deg, $yellow 5%, #383838 5%, #383838 10%, $yellow 10%, $yellow 15%, #383838 15%, #2D2F2F 34%, #232424 56%);
+  animation-duration: 2s;
+  animation-name: slidein;
   small {
     padding: 15px 20vw;
     font-size: 25px;
@@ -22,12 +24,12 @@ $blue: #276B90;
     }
   }
   .description {
-    padding: 0 20vw;
+    padding: 3vh 20vw;
     font-size: 20px;
     width: 60vw;
   }
   .contact-description{
-    padding-top: 5vh;
+    padding-top: 7vh;
     padding-right: 2vh;
     display: flex;
     flex-direction: row;
@@ -45,7 +47,7 @@ $blue: #276B90;
   border-radius: 15px;
   color: $yellow;
   border: 1px solid $lgray;
-  box-shadow: 3px 3px 3px $yellow;
+  animation: shadow ease 2s infinite;
   position: relative;
   left: 74vw;
   bottom: 20vw;
@@ -57,7 +59,7 @@ $blue: #276B90;
   border-radius: 15px;
   color: $yellow;
   border: 1px solid $lgray;
-  box-shadow: 3px 3px 3px $yellow;
+  animation: shadow ease 2s infinite;
   position: relative;
   left: 74vw;
   bottom: 20vw;
@@ -65,10 +67,10 @@ $blue: #276B90;
 .btn-up:hover {
   background-color: $yellow;
   color: $dgray;
-  box-shadow: 3px 3px 3px $dgray;
+  animation: none;
 }
 .btn-down:hover {
   background-color: $yellow;
   color: $dgray;
-  box-shadow: 3px 3px 3px $dgray;
+  animation: none;
 }

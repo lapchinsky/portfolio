@@ -1,10 +1,10 @@
-import {CLOSE_CV, OPEN_CV, SWITCH_PROD, SWITCH_VISUAL} from "./types";
+import {CLOSE_CV, OPEN_CV, SWITCH_HARD, SWITCH_SOFT,} from "./types";
 
 const handlers = {
-    [SWITCH_VISUAL]: (state) => {
+    [SWITCH_SOFT]: (state) => {
         return {...state, visual: true}
     } ,
-    [SWITCH_PROD]: (state) => {
+    [SWITCH_HARD]: (state) => {
         return {...state, visual: false}
     } ,
     [OPEN_CV]: (state) => {

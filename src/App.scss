@@ -46,8 +46,17 @@ $blue: #276B90;
       font-size: 1em;
       border-radius: 3px;
     }
+    button:hover {
+      background-color: $yellow;
+      box-shadow: 3px 3px 8px $yellow;
+    }
+
     button.yellowbtn {
       background: $yellow;
+    }
+    button.yellowbtn:hover {
+      background: rgba(245, 245, 245, 0.9);
+      box-shadow: 3px 3px 8px rgba(245, 245, 245, 0.9);
     }
   }
 }
@@ -57,7 +66,7 @@ $blue: #276B90;
   background-color: $dgray;
   border-radius: 15px;
   border: 1px solid $lgray;
-  box-shadow: 3px 3px 3px $yellow;
+  animation: shadow ease 2s infinite;
 }
 .button-up {
   width: 5vw;
@@ -65,15 +74,55 @@ $blue: #276B90;
   background-color: $dgray;
   border-radius: 15px;
   border: 1px solid $lgray;
-  box-shadow: 3px 3px 3px $yellow;
+  animation: shadow ease 2s infinite;
 }
 .button-up:hover {
   background-color: $yellow;
   color: $dgray;
-  box-shadow: 3px 3px 3px $dgray;
+  animation: none;
 }
 .button-down:hover {
   background-color: $yellow;
   color: $dgray;
-  box-shadow: 3px 3px 3px $dgray;
+  animation: none;
+}
+@keyframes opacityinc {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes slidein {
+  0% {
+      left: -100vw;
+    width: 300%;
+  }
+
+  100% {
+    left: 0;
+    width: 100%;
+  }
+}
+@keyframes slidedown {
+  0% {
+    up: 200vh;
+    opacity: 0;
+  }
+  100% {
+    up: 0;
+    opacity: 1;
+  }
+}
+@keyframes shadow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 3px 3px 3px $yellow;
+  }
+  100% {
+    box-shadow: none;
+  }
 }

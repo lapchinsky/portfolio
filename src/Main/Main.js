@@ -13,7 +13,7 @@ const Main = () => {
             </h1>
             <div className='description'>
                 I would help you with building and maintaining responsive websites.
-                Proficient in HTML, CSS, JavaScript and React; plus some others libraries and frameworks.
+                Proficient in HTML, CSS, JavaScript and React; plus some other modern libraries and frameworks.
             </div>
             <div style={{marginTop: '2vh'}}>
                 <button onClick={() => openCV()} className='yellowbtn'><a className='btnlink' href="#portfolio">Watch projects</a></button>

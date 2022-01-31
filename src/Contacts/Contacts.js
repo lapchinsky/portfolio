@@ -9,11 +9,9 @@ const Contact = () => {
             <small>-Contact me</small> &nbsp;
             <h1>
                 <p>Choose provided method to </p>
-                <strong>Contact Me</strong>
+                <strong>{`[Contact Me]`}</strong>
             </h1>
-            <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Alias aliquam aperiam eaque ex in ipsa laborum pariatur repellendus sapiente. Beatae blanditiis
-                excepturi hic iste, possimus quaerat quibusdam saepe sapiente tempora.
+            <div className='description'>If you have any questions or proposals, feel free to contact me directly using this options:
             </div>
             <div>
                 <div className='contact-description'>

@@ -6,6 +6,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 15px 20vw;
+  animation-name: slidedown;
+  animation-duration: 2s;
   .skills-content {
     display: flex;
     gap: 2rem;

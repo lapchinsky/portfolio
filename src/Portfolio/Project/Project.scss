@@ -29,3 +29,26 @@
   height: 35vh;
   border-radius: 15px;
 }
+.img-container{
+  position: relative;
+  animation-name: opacityinc;
+  animation-duration: 2s;
+}
+.img-descriprion {
+  width: 35vw;
+  height: 35vh;
+  padding: 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  background-color: #2D2F2F;
+  border-radius: 15px;
+  opacity: 0;
+  z-index: 100;
+  color: #E7E26E;
+}
+.img-descriprion:hover {
+  opacity: 0.9;
+  animation-name: opacityinc;
+  animation-duration: 1s;
+}

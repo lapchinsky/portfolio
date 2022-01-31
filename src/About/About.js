@@ -10,17 +10,15 @@ const About = () => {
         <a name='about' className='about'>
             <div className='about-preview'>
                 <div>
-                    <img
-                        src="https://previews.123rf.com/images/rikkyal/rikkyal1712/rikkyal171200010/90908344-bearded-man-s-face-hipster-character-fashion-silhouette-avata.jpg"
-                        alt="avatar"/>
+                    <img src={process.env.PUBLIC_URL + '/images/me.png'} alt="Lapchinsky Artem"/>
                 </div>
                 <div className='preview'>
                     <small>-About me</small>
-                    <h1>Hi! My name is Artem Lapchinsky and I am a <strong>Web developer</strong></h1>
+                    <h1>Hi! My name is Artem Lapchinsky and I am <strong>Web developer</strong></h1>
                     <div className='description'>
                         Equipped with a diverse and promising skill set.
                         Proficient in an assortment of technologies, including HTML, CSS, JavaScript, React and Redux.
-                        Dedicated to learning additional technologies and coding languages(currently enrolled in a TypeScript course).
+                        Dedicated to learning additional technologies and coding languages.
                         Able to effectively self-manage during independent projects, as well as collaborate in a team setting.
                         Looking for an entry-level position at a great company to be a hard-working asset to any team, to learn, grow and develop long-term.
                     </div>

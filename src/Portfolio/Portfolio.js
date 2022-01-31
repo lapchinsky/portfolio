@@ -16,8 +16,8 @@ const Portfolio = () => {
 
                 <div className='preview'>
                     <small>Portfolio;</small>
-                    <h1>Provide your work <strong>Web development</strong></h1>
-                    <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, id.
+                    <h1>Welcome to <strong>My portfolio</strong></h1>
+                    <div className='description'>Apart from the current website you can try to use some others of my projects.
                     </div>
                 </div>
             </div>

@@ -4,21 +4,22 @@ import List from "./skillsList/skillsList";
 import {portfolioContext} from "../State/portfolioContext";
 
 const Skills = () => {
-    const {toggleVisual, toggleProd} = useContext(portfolioContext)
+    const {toggleSoft, toggleHard, state} = useContext(portfolioContext)
     return (
         <a name='skills' className='skills'>
             <div className='preview'>
                 <small>-Skills</small>
                 <div>
-                    <h1>My <strong>Web Development</strong> skills include</h1>
-                    <div className='description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi numquam quaerat quasi similique,
-                        veritatis voluptates?</div>
+                    <h1>Here is <strong>My current skills</strong> list, which includes :</h1>
+                    <div className='description'>
+
+                    </div>
                 </div>
             </div>
                 <div className='skills-content'>
                     <div className='buttons'>
-                        <button className='yellowbtn' type="button" onClick={() => toggleVisual()}>Web Design</button>
-                        <button type="button" onClick={() => toggleProd()}>Web development</button>
+                        <button className={state.visual ? 'yellowbtn' : null} type="button" onClick={() => toggleSoft()}>Soft skills</button>
+                        <button className={state.visual ? null : 'yellowbtn'} type="button" onClick={() => toggleHard()}>Hard skills</button>
                     </div>
                     <List/>
                 </div>

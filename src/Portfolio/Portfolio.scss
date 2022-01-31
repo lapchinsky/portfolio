@@ -6,6 +6,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 15px 12vw;
+  animation-name: slidedown;
+  animation-duration: 2s;
     .portfolio-preview {
       display: flex;
       justify-content: space-evenly;

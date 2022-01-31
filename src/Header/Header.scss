@@ -17,6 +17,8 @@ $dgray: #3E3E37;
       display: flex;
       gap: 15px;
       justify-content: space-between;
+      animation-duration: 2s;
+      animation-name: opacityinc;
         a {
           font-size: 20px;
           font-weight: 300;
