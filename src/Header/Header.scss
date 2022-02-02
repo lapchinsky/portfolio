@@ -1,3 +1,4 @@
+@import "node_modules/include-media/dist/include-media";
 $yellow: #E7E26E;
 $lgray: #99958C;
 $dgray: #3E3E37;
@@ -13,7 +14,7 @@ $dgray: #3E3E37;
   display: flex;
   justify-content: space-between;
   align-items: center;
-    nav {
+    .header__buttons {
       display: flex;
       gap: 15px;
       justify-content: space-between;
@@ -32,4 +33,10 @@ $dgray: #3E3E37;
         color: $yellow;
       }
     }
+  @include media('<730px') {
+    justify-content: center;
+    .header__buttons {
+      display: none;
+    }
+  }
 }

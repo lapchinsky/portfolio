@@ -1,19 +1,27 @@
+@import "node_modules/include-media/dist/include-media";
+
 .description {
   color: #99958C;
-  h3 {
-    margin-left: 1em;
-    color: #3E3E37;
-    font-size: 23px;
-    font-weight: bold;
+  p{
+    font-size: 2vh;
   }
   .bi-laptop {
-    width: 50px;
-    height: 50px;
+    width: 5vh;
+    height: 5vh;
     margin-left: 1em;
     color: #DBD7D2;
   }
   .bi-laptop:hover {
     color:#8B02E3;
 
+  }
+  @include media('<730px') {
+    width: 15vw;
+    p{
+      font-size: 7px;
+    }
+    .bi-laptop {
+      margin-left: 10px;
+    }
   }
 }

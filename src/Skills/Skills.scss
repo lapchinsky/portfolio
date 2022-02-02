@@ -1,7 +1,9 @@
+@import "node_modules/include-media/dist/include-media";
+
 .skills {
   background-color: #F5F5F5;
   color: #3E3E37;
-  font-size: 20px;
+  font-size: 3vh;
   display: flex;
   gap: 5vw;
   flex-direction: row;
@@ -12,9 +14,16 @@
   .skills-content {
     display: flex;
     gap: 2rem;
-    font-size: 30px;
+    font-size: 4vh;
     font-weight: bold;
     padding-top: 3vh;
+    ul{
+      height: 25vh;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 2vw;
+    }
     .buttons {
       display: flex;
       flex-direction: column;
@@ -26,11 +35,27 @@
         background: rgba(245, 245, 245, 0.9);
         border: 1px solid #99958C;
         padding: 0 7px;
-        font-size: 1em;
+        font-size: 4vh;
         border-radius: 3px;
       }
       button.yellowbtn{
         background-color: #E7E26E;
+      }
+    }
+  }
+  @include media('<730px') {
+    padding: 5px 10vw;
+    .skills-content{
+      font-size: 2vh;
+      height: 34%;
+      ul{
+        height: 10vh;
+        padding-top: 1vh;
+      }
+      .buttons{
+        button{
+          font-size: 2vh;
+        }
       }
     }
   }

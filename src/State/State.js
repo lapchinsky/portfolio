@@ -5,6 +5,43 @@ import {CLOSE_CV, OPEN_CV, SWITCH_HARD, SWITCH_SOFT} from "./types";
 
 export const State = ({children}) => {
     const initialState = {
+        components: {
+            About: {
+                header: 'Hi! My name is Artem Lapchinsky and I am ',
+                strong: 'Web developer',
+                preview: '-About me',
+                description: 'Equipped with a diverse and promising skill set.\n' +
+                    '                        Proficient in an assortment of technologies, including HTML, CSS, JavaScript, React and Redux.\n' +
+                    '                        Dedicated to learning additional technologies and coding languages.\n' +
+                    '                        Able to effectively self-manage during independent projects, as well as collaborate in a team setting.\n' +
+                    '                        Looking for an entry-level position at a great company to be a hard-working asset to any team, to learn, grow and develop long-term.',
+            },
+            Skills: {
+                header: 'Here is the list, which includes ',
+                strong: 'My current skills: ',
+                preview: '-Skills',
+                description: null,
+            },
+            Portfolio: {
+                header: 'Welcome to ',
+                strong: 'My portfolio',
+                preview: 'Portfolio;',
+                description: 'Apart from the current website you can try to use some others of my projects.',
+            },
+            Main: {
+                header: `I'am Artem Lapchinsky `,
+                strong: `{Web Developer}`,
+                preview: '-Hi',
+                description: 'I would help you with building and maintaining responsive websites.\n' +
+                    '                Proficient in HTML, CSS, JavaScript and React; plus some other modern libraries and frameworks.',
+            },
+            Contacts: {
+                header: 'Choose provided method to ',
+                strong: `[Contact Me]`,
+                preview: '-Questions?',
+                description: 'If you have any questions or proposals, feel free to contact me directly using this options:',
+            },
+        },
         projects: [
             {
                 name: 'Todo App',
@@ -66,7 +103,7 @@ export const State = ({children}) => {
                 'Communication Skills', 'Creativity', 'Problem-solving', 'Teamwork ', 'Responsibility', 'Management skills'
             ],
             hard: [
-                'HTML5','CSS3', 'SCSS', 'JavaScript', 'React', 'Redux', 'Git', 'Firebase', 'Webpack', 'Figma', 'Bootstrap', 'Ant-Design',
+                'HTML5', 'CSS3', 'SCSS', 'JavaScript', 'React', 'Redux', 'Git', 'Firebase', 'Webpack', 'Figma', 'Bootstrap', 'Ant-Design',
             ]
         },
         duties: [

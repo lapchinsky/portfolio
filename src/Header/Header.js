@@ -8,7 +8,7 @@ const Header = () => {
 
         <div className='header'>
             {`<Lapchinsky Artem />`}
-            <nav>
+            <nav className='header__buttons'>
                 <a onClick={() => openCV()} href="#about">About me</a>
                 <a onClick={() => openCV()} href="#skills">Skills</a>
                 <a onClick={() => openCV()} href="#portfolio">Portfolio</a>

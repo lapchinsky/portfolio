@@ -1,7 +1,7 @@
 .portfolio {
   background-color: #F5F5F5;
   color: #3E3E37;
-  font-size: 20px;
+  font-size: 3vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -14,10 +14,11 @@
       gap: 7vw;
       margin-left: 15vw;
     }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+  }
+
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2vw;
-}

@@ -1,3 +1,5 @@
+@import "node_modules/include-media/dist/include-media";
+
 .project{
   padding-top: 15px;
   display: flex;
@@ -5,50 +7,65 @@
   justify-content: center;
   align-items: center;
     strong{
-      font-size: 5rem;
+      font-size: 6vh;
     }
-}
-.links {
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 20vw;
-  a{
-    color: #3E3E37;
-    img{
-      width: 1vw;
-      height: 1vw;
+  .links {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 20vw;
+    a{
+      color: #3E3E37;
+      img{
+        width: 1vw;
+        height: 1vw;
+      }
+    }
+    a:hover{
+      color: #E8CC17;
     }
   }
-  a:hover{
-    color: #E8CC17;
+  .projectimg {
+    width: 35vw;
+    height: 35vh;
+    border-radius: 15px;
   }
-}
-.projectimg {
-  width: 35vw;
-  height: 35vh;
-  border-radius: 15px;
-}
-.img-container{
-  position: relative;
-  animation-name: opacityinc;
-  animation-duration: 2s;
-}
-.img-descriprion {
-  width: 35vw;
-  height: 35vh;
-  padding: 10px;
-  border-radius: 15px;
-  position: absolute;
-  top: 0;
-  background-color: #2D2F2F;
-  border-radius: 15px;
-  opacity: 0;
-  z-index: 100;
-  color: #E7E26E;
-}
-.img-descriprion:hover {
-  opacity: 0.9;
-  animation-name: opacityinc;
-  animation-duration: 1s;
+  .img-container{
+    position: relative;
+    animation-name: opacityinc;
+    animation-duration: 2s;
+  }
+  .img-descriprion {
+    width: 35vw;
+    height: 35vh;
+    padding: 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    background-color: #2D2F2F;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 100;
+    color: #E7E26E;
+  }
+  .img-descriprion:hover {
+    opacity: 0.9;
+    animation-name: opacityinc;
+    animation-duration: 1s;
+  }
+
+  @include media('<730px') {
+    padding-top: 10px;
+    margin-left: 5vw;
+      .projectimg{
+        width: 70vw;
+        height: 70vw;
+        border-radius: 25px;
+      }
+    .img-descriprion {
+      width: 70vw;
+      height: 70vw;
+      border-radius: 25px;
+    }
+  }
 }

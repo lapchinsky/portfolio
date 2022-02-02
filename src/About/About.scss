@@ -1,3 +1,5 @@
+@import "node_modules/include-media/dist/include-media";
+
 .about {
   background-color: #F5F5F5;
   color: #3E3E37;
@@ -20,5 +22,16 @@
   img {
     height: 65vh;
     width: 27vw;
+  }
+  @include media('<730px') {
+    padding: 10px 10vw;
+    img {
+      height: 33vh;
+      width: 23vh;
+    }
+    .list {
+      margin-left: 7vw;
+      flex-wrap: wrap;
+    }
   }
 }

@@ -1,0 +1,47 @@
+@import "node_modules/include-media/dist/include-media";
+$yellow: #E7E26E;
+
+.title {
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  .title__preview {
+    font-size: 3vh;
+    color: #8B02E3;
+  }
+
+  .title__header {
+    font-size: 6vh;
+    color: #232424;
+    width: 25vw;
+    strong {
+      color: $yellow;
+    }
+  }
+
+  .title__description {
+    width: 20vw;
+    margin-bottom: 10px;
+  }
+
+  @include media('<1050px') {
+    .title__description {
+      width: 35vw;
+    }
+  }
+  @include media('<730px') {
+    gap: 4vw;
+    .title__preview{
+      font-size: 2vh;
+    }
+    .title__header {
+      font-size: 3vh;
+    }
+    .title__description {
+      font-size: 3vw;
+    }
+  }
+}

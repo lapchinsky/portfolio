@@ -1,0 +1,50 @@
+@import "node_modules/include-media/dist/include-media";
+$yellow: #E7E26E;
+$lgray: #99958C;
+$dgray: #3E3E37;
+$green: #22621D;
+$blue: #276B90;
+
+.title {
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  .title__preview {
+    font-size: 3vh;
+    color: $blue;
+  }
+
+  .title__header {
+    font-size: 6vh;
+    color: whitesmoke;
+    width: 25vw;
+    strong {
+      color: $green;
+    }
+  }
+
+  .title__description {
+    width: 20vw;
+    margin-bottom: 10px;
+  }
+
+  @include media('<1050px') {
+    .title__description {
+      width: 35vw;
+    }
+  }
+  @include media('<730px') {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 7vw;
+    .title__preview{
+      font-size: 2vh;
+    }
+    .title__header {
+      font-size: 3vh;
+    }
+  }
+}

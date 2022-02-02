@@ -1,3 +1,4 @@
+@import "node_modules/include-media/dist/include-media";
 $yellow: #E7E26E;
 $lgray: #99958C;
 $dgray: #3E3E37;
@@ -6,71 +7,48 @@ $blue: #276B90;
 
 
 .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: center;
+  align-content: center;
+  padding: 15px 20vw;
   height: 46vh;
-  background: linear-gradient(-130deg, $yellow 5%, #383838 5%, #383838 10%, $yellow 10%, $yellow 15%, #383838 15%, #2D2F2F 34%, #232424 56%);
-  animation-duration: 2s;
   animation-name: slidein;
-  small {
-    padding: 15px 20vw;
-    font-size: 25px;
-    color: $blue;
+  animation-duration: 2s;
+  background: linear-gradient(-130deg, $yellow 5%, #383838 5%, #383838 10%, $yellow 10%, $yellow 15%, #383838 15%, #2D2F2F 34%, #232424 56%);
+    .contact-description{
+      display: flex;
+      gap: 10px;
+      font-size: 3vh;
+      margin-left: 20vw;
+    }
+
+.button-up {
+  color: $lgray;
+  background-color: $dgray;
+  margin-top: 10px;
+  margin-left: 27vw;
+  padding: 0 7px;
+  font-size: 3vh;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $lgray;
+    color: $dgray;
+    animation: none;
+    box-shadow: 3px 3px 7px $lgray;
   }
-  h1 {
-    padding: 0 20vw;
-    font-size: 50px;
-    color: #EAEEF1;
-    strong {
-      color: $green
+}
+  @include media('<1050px') {
+    padding: 5px 10vw;
+    .button-up {
+      margin-left: 34vw;
     }
   }
-  .description {
-    padding: 3vh 20vw;
-    font-size: 20px;
-    width: 60vw;
+  @include media('<730px') {
+    .contact-description {
+      font-size: 3vw;
+    }
   }
-  .contact-description{
-    padding-top: 7vh;
-    padding-right: 2vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3vw;
-      p {
-        font-size: 20px;
-      }
-  }
-}
-.btn-up {
-  width: 60px;
-  height: 22px;
-  background-color: $dgray;
-  border-radius: 15px;
-  color: $yellow;
-  border: 1px solid $lgray;
-  animation: shadow ease 2s infinite;
-  position: relative;
-  left: 74vw;
-  bottom: 300px;
-}
-.btn-down {
-  width: 60px;
-  height: 22px;
-  background-color: $dgray;
-  border-radius: 15px;
-  color: $yellow;
-  border: 1px solid $lgray;
-  animation: shadow ease 2s infinite;
-  position: relative;
-  left: 74vw;
-  bottom: 300px;
-}
-.btn-up:hover {
-  background-color: $yellow;
-  color: $dgray;
-  animation: none;
-}
-.btn-down:hover {
-  background-color: $yellow;
-  color: $dgray;
-  animation: none;
 }
