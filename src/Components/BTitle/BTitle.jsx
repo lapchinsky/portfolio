@@ -5,8 +5,9 @@ const BTitle = ({ header, strong, preview, description}) => {
     return (
         <div className={styles.title}>
             <small className={styles.title__preview}>{preview}</small>
-            <h1 className={styles.title__header}>{header}<strong className='title__header-strong'>{strong}</strong></h1>
-            <div className={styles.title__description}>
+            <h1 className={styles.title__header}>{header}</h1>
+            <strong className={styles.strong}>{strong}</strong>
+            <div className={styles.title__description}>ong
                 {description}
             </div>
         </div>

@@ -21,9 +21,12 @@ $blue: #276B90;
     font-size: 6vh;
     color: whitesmoke;
     width: 25vw;
-    strong {
-      color: $green;
-    }
+  }
+
+  .strong {
+    font-size: 6vh;
+    width: 25vw;
+    color: $green;
   }
 
   .title__description {
