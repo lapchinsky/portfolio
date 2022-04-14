@@ -44,6 +44,14 @@ export const State = ({children}) => {
         },
         projects: [
             {
+                name: 'Top App',
+                imgUrl: '/topApp.jpg',
+                projectLink: 'https://top-app-lyart.vercel.app/courses/finansovaya-gramotnost',
+                githubLink: 'https://github.com/lapchinsky/top-app',
+                description: `This application developed using NextJS framework which provides SSR, with React + TypeScript base. All markup created with grid technology, styles adjusted by CSS modules.
+                Framer Motion used for animations. It's not finished yet, but if you are interested in educational courses you can choose the good one using this App`
+            },
+            {
                 name: 'Todo App',
                 imgUrl: '/todo.jpg',
                 projectLink: 'https://todohooks-beige.vercel.app',
