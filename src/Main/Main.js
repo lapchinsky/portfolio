@@ -14,9 +14,8 @@ const Main = () => {
                 description={state.components.Main.description}
             />
             <div className='buttons-group'>
-                <button onClick={() => openCV()} className='yellowbtn'><a className='btnlink' href="#portfolio">Watch projects</a></button>
                 <button><a className='btnlink' href={process.env.PUBLIC_URL + '/LapchinskyCV.pdf'} download>Download CV</a></button>
-                {state.opened ? null : <button className='button-down' onClick={() => openCV()} placeholder='Open'>Read profile</button> }
+                <button className='yellowbtn' onClick={() => openCV()} placeholder='Open'>Read profile</button>
             </div>
         </div>
     )
